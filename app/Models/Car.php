@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Car extends Model
+{
+    use HasFactory;
+    protected $table = "cars";
+    public $fillable = ['plate_number', 'owner', 'travel_fee'];
+    // public function category(){
+    //     return $this->belongsTo(Category::class,'cate_id');
+    // }
+}
